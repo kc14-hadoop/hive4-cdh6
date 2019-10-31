@@ -212,7 +212,12 @@
     <wadl-resourcedoc-doclet.version>1.4</wadl-resourcedoc-doclet.version>
     <velocity.version>1.5</velocity.version>
     <xerces.version>2.9.1</xerces.version>
+    <!-- 
     <zookeeper.version>3.5.5</zookeeper.version>
+    <zookeeper.version>3.4.5</zookeeper.version>
+    <zookeeper.version>3.4.14</zookeeper.version>
+     -->
+    <zookeeper.version>3.4.14</zookeeper.version>
     <jpam.version>1.1</jpam.version>
     <felix.version>2.4.0</felix.version>
     <curator.version>4.2.0</curator.version>
@@ -574,6 +579,12 @@
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-recipes</artifactId>
         <version>${curator.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.zookeeper</groupId>
+					<artifactId>zookeeper</artifactId>
+				</exclusion>
+			</exclusions>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
