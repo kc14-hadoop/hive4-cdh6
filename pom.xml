@@ -180,7 +180,7 @@
     <joda.version>2.9.9</joda.version>
     <jodd.version>3.5.2</jodd.version>
     <json.version>1.8</json.version>
-    <junit.version>4.11</junit.version>
+    <junit.version>4.13.1</junit.version>
     <kryo.version>4.0.2</kryo.version>
     <kudu.version>1.10.0</kudu.version>
     <!-- Leaving libfb303 at 0.9.3 regardless of libthrift: As per THRIFT-4613 The Apache Thrift project does not publish items related to fb303 at this point -->
